@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+import React from "react";
+import Header from "./../Header/Header"
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -12,29 +13,22 @@ const AsideLeft = () => {
   );
 };
 
-const Header = () => {
-  return <header>This is Hedaer component</header>;
-};
-
 const Footer = () => {
   return <footer>&copy; by Xavi Navarro</footer>;
 };
 
-const Nav = () => {
-  return  <nav></nav>;
-};
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div>
-      <Header />
-      <Nav />
+    <>
+      <Header/>
       <main>
         <AsideLeft />
+        <div className='w-10 bg-red-400'>asd</div>
         {children}
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 
