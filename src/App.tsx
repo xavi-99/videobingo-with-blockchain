@@ -6,7 +6,8 @@ import PageNotFound from "./components/PageNotFound/PageNotFound";
 const App = (): JSX.Element => {
   return (
     <Routes>
-      <Route path='/bingo/:game-id' element={<Game />} />
+      {/* <Route path='/bingo/:game-id' element={<Game />} /> */}
+      <Route path='/Game' element={<Game />} />
       <Route path='/' element={<Home />} />
       <Route path={"*"} element={<PageNotFound />} />
     </Routes>

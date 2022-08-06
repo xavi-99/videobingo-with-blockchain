@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../../components/Layout/Layout";
+import Card from "./../../components/Card/Card";
 const Home: React.FC = () => {
   return (
     <Layout>
-      <h1>Hello this is Home page</h1>
+
     </Layout>
   );
 };
-
 export default Home;
